@@ -13,6 +13,9 @@
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
         </script>
+        <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="script.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
             integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
         </script>
@@ -26,7 +29,7 @@
 
     <body>
         <!--Navigation Bar-->
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed">
+        <nav class="navbar navbar-expand-md  fixed-top">
             <div class="container-fluid">
                 <a class="navbar-logo"><img src="" /></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
@@ -35,13 +38,13 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Home</a>
+                            <a class="nav-link" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">About Me</a>
+                            <a class="nav-link" href="#about_me">About Me</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Skills</a>
+                            <a class="nav-link" href="#skills">Skills</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">Contact Me</a>
@@ -56,23 +59,30 @@
             <div class="fixed-wrap">
                 <div id="fixed">
                     <!--Home section with pfp and briefing-->
-                    <div class="card container-fluid col-8">
+                    <class class="card container-fluid col-8" id="home">
                         <img src="/images/pexels-photo-546819.jpeg" alt="pfp-bg" class="card-img-bg" />
                         <img src="/images/IMG_20200517_074303.jpg" alt="pfp" class="card-img" />
                         <div class="brief-intro centre">
-                            <h1 class="name"><b>Hi! My name is <br> Ritvij Kumar Sharma</b></h1>
-                            <h5 class="info">I am an Android developer and a Web developer. I love creating
+                            <h1 class="name">Hi! My name is <br> Ritvij Kumar Sharma</h1>
+                            <h5 class="info">I am an Android and Web developer. I love creating
                                 bug free applications and beautiful UI. Also trying to learn and fit ML into
                                 my applications.
                             </h5>
+                            <div class="social">
+                                <a class="instagram" href="https://www.instagram.com/ritviz_14.exe/"><i class="fab fa-instagram"></i></a>
+                                <a class="github" href="https://github.com/ritvij14"><i class="fab fa-github"></i></a>
+                                <a class="linkedin" href="https://www.linkedin.com/in/ritvij-kumar-sharma-1410-rks/"><i class="fab fa-linkedin"></i></a>
+                                <a class="gmail" href=""><i class="fas fa-envelope-square"></i></a>
+                            </div>
                         </div>
+                    </class>
                     </div>
                 </div>
             </div>
         </figure>
 
         <!--About me section with details-->
-        <div class="container-fluid">
+        <div class="container-fluid" id="about_me">
             <div class="jumbotron">
                 <h1>About Me</h1>
                 <p class="about">I am a first year student in BITS Pilani, Goa campus. I am pursuing a B.E. Hons. 
@@ -83,7 +93,7 @@
 
         <!--Skills section with all my techstack-->
         <!--Heading-->
-        <div class="container-fluid padding">
+        <div class="container-fluid padding" id="skills">
             <div class="welcome text-center">
                 <div class="col-12">
                     <h1 class="display-4">My Skills</h1>
@@ -93,7 +103,7 @@
         </div>
 
         <!--Columns for skills-->
-        <div class="container-fluid">
+        <div class="container-fluid skills">
             <div class="row text-center">
                 <div class="android col-xs-12 col-sm-12 col-md-6">
                     <i class="fab fa-android"></i>
@@ -129,6 +139,43 @@
         </div>
 
         <!--Contact me section with links to github and linkedin ids-->
+        <footer>
+            <div class="footer">
+                <div class="footer-heading text-center">
+                    <h1> Wanna Collaborate with me? </h1>
+                    <h3> Contact me here...</h3>
+                </div>
+                <div class="row name-email-input">
+                    <div class="col-md-6">
+                        <label for="name">
+                            Your name
+                        </label>
+                        <input type="text" id="name" name="name" class="form-control">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="email">
+                            Your email
+                        </label>
+                        <input type="text" id="email" name="email" class="form-control">
+                    </div>
+                </div>
+                <div class="col-md-12 subject-input">
+                    <label for="subject">
+                        Subject
+                    </label>
+                    <input type="text" id="subject" name="subject" class="form-control">
+                </div>
+                <div class="col-md-12 email-message">
+                    <label for="email">
+                        Subject
+                    </label>
+                    <input type="text" id="email" name="email" class="form-control">
+                </div>
+                <div class="text-center submit-button">
+                    <button id="submit" type="submit" form="form1" value="Submit">Submit</button>
+                </div>
+            </div>
+        </footer>
 
     </body>
 

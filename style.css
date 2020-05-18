@@ -2,37 +2,43 @@ body {
     border: 0px;
     margin: 0px;
     padding: 0px;
-}
-
-#fixed {
-    background-image: url(/images/237038.jpg);
-    background-attachment: fixed;
-    height: 675px;
-    padding-top: 50px;
-    background-position: center;
-    background-size: auto;
-    margin-bottom: 0px;
+    font-family: 'Righteous';
+    font-size: 20px;
 }
 
 /* all customizations for navbar*/
 .navbar {
     border: 0px;
     margin: 0px;
+    background: transparent;
 }
 
 .navbar-nav>li {
-    height: 35px;
+    height: 38px;
+}
+
+.navbar .navbar-nav .nav-item>a {
+    color: white;
 }
 
 .navbar-nav>.active>a {
     color: white;
     background-color: deepskyblue;
-    border-bottom: 2px solid white;
 }
 
 .navbar .navbar-nav .nav-item>a:hover {
     background-color: deepskyblue;
     color: white;
+}
+
+#fixed {
+    background-image: url(/images/237038.jpg);
+    background-attachment: fixed;
+    height: 675px;
+    padding-top: 60px;
+    background-position: center;
+    background-size: auto;
+    margin-bottom: 0px;
 }
 
 /*for home card*/
@@ -75,6 +81,44 @@ body {
     margin-left: 1.5rem;
 }
 
+.info {
+    padding: 20px;
+    padding-left: 0px;
+}
+
+.fa-instagram,
+.fa-linkedin,
+.fa-github,
+.fa-envelope-square {
+    font-size: 3rem;
+    padding: 1rem;
+    color: deepskyblue;
+}
+
+.fa-instagram:hover {
+    color: #dd2a7b;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.2s;
+}
+
+.fa-github:hover {
+    color: #211f1f;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.2s;
+}
+
+.fa-linkedin:hover {
+    color: #0077b5;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.2s;
+}
+
+.fa-envelope-square:hover {
+    color: #d44638;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.2s;
+}
+
 /*About me jumbotron*/
 .jumbotron {
     padding: 1rem;
@@ -83,12 +127,19 @@ body {
     border-radius: 0px;
 }
 
-.android, .web{
+.android,
+.web {
     padding-left: 10vw;
     padding-right: 10vw;
 }
 
-.fa-android, .fa-java, .fa-code, .fa-html5, .fa-css3, .fa-js-square, .fa-node {
+.fa-android,
+.fa-java,
+.fa-code,
+.fa-html5,
+.fa-css3,
+.fa-js-square,
+.fa-node {
     font-size: 3rem;
     padding: 0.5rem;
     padding-bottom: 1rem;
@@ -120,4 +171,53 @@ body {
 
 .fa-node {
     color: #3c873a;
+}
+
+/*Skills info*/
+.skills {
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+/*Footer*/
+.footer {
+    background-color: #1c2e4a;
+    color: white;
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+
+.name-email-input {
+    padding-left: 23%;
+    padding-right: 23%;
+}
+
+.subject-input {
+    padding-left: 23%;
+    padding-right: 23%;
+    margin-top: 3%;
+}
+
+.email-message {
+    padding-left: 23%;
+    padding-right: 23%;
+    margin-top: 3%;
+}
+
+.submit-button {
+    margin-top: 2%;
+}
+
+#submit {
+    background-color: deepskyblue;
+    border: deepskyblue;
+    padding: 0.5%;
+    border-radius: 10%;
+    color: white;
+    font-size: 22px;
+}
+
+#submit:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.7);
+    transition: 0.1s;
 }
