@@ -313,7 +313,6 @@ body {
     .fa-github,
     .fa-envelope-square {
         font-size: 2.5rem;
-        padding-left: 0rem;
         color: deepskyblue;
     }
 
@@ -345,7 +344,7 @@ body {
     }
 
     .fixed-wrap .card {
-    width: 69vw;
+    width: 72vw;
     height: 725px;
     display: flex;
     flex-direction: row;
@@ -354,7 +353,7 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-left: 0px;
     padding-left: 0px;
-    margin-left: 15%;
+    margin-left: 13%;
     border-radius: 1%;
     }
 
