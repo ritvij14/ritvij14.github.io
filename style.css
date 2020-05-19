@@ -231,6 +231,62 @@ body {
 }
 
 /*media queries*/
-@media only screen and (max-device-width: 768px) {
-    
+@media only screen and (max-width: 500px) {
+
+    body {
+        border: 0px;
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Righteous';
+        font-size: 16px;
+    }
+
+    .name {
+        font-size: 26px;
+        margin-left: 15%;
+        margin-right: -15%;
+    }
+
+    .info {
+        font-size: 20px;
+        margin-left: 15%;
+        margin-right: -15%;
+    }
+
+    .fixed-wrap .card {
+    width: 69vw;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-left: 0px;
+    padding-left: 0px;
+    margin-left: 15%;
+    border-radius: 1%;
+    }
+
+    .card .card-img-bg {
+        width: 69vw;
+        height: 65vw;
+        margin-left: -5%;
+        clip-path: polygon(0 0, 100% 0%, 100% 50%, 0% 100%);
+    }
+
+    .card .card-img {
+        object-fit: cover;
+        height: 45vw;
+        width: 40vw;
+        margin-left: 21%;
+        margin-top: -70%;
+        border: 0.5rem solid white;
+        border-radius: 30%;
+        z-index: 999;
+    }
+
+    #resume {
+        font-size: 22px;
+        margin-bottom: 5%;
+    }
 }
