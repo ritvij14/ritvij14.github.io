@@ -43,7 +43,7 @@ body {
 
 /*for home card*/
 .fixed-wrap .card {
-    width: 100%;
+    width: 70%;
     height: 600px;
     display: flex;
     flex-direction: row;
@@ -52,33 +52,31 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-left: 0px;
     padding-left: 0px;
-}
-
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    margin-left: 15%;
+    border-radius: 1%;
 }
 
 .card .card-img-bg {
-    width: 50%;
-    height: 100%;
-    object-fit: cover;
+    height: 39.2vw;
+    width: 37vw;
+    border-radius: 1%;
+    margin-top: -1%;
+    margin-left: -4.6%;
     clip-path: polygon(0 0, 100% 0, 50% 100%, 0% 100%);
 }
 
 .card .card-img {
-    height: 65%;
-    width: 35%;
     object-fit: cover;
-    margin-left: -30%;
+    height: 28vw;
+    width: 25vw;
+    margin-left: -40%;
     border: 0.5rem solid white;
     border-radius: 30%;
     z-index: 999;
 }
 
 .brief-intro {
-    width: fit-content;
-    margin-right: auto;
-    margin-left: 1.5rem;
+    margin-right: 13%;
 }
 
 .info {
@@ -127,6 +125,17 @@ body {
     border-radius: 0px;
 }
 
+#resume {
+    margin-top: 15%;
+}
+
+#resume:hover {
+    background-color: deepskyblue;
+    border-color: deepskyblue;
+    color: white;
+}
+
+/*Skills*/
 .android,
 .web {
     padding-left: 10vw;
@@ -135,7 +144,7 @@ body {
 
 .fa-android,
 .fa-java,
-.fa-code,
+.fa-react,
 .fa-html5,
 .fa-css3,
 .fa-js-square,
@@ -153,8 +162,8 @@ body {
     color: #f89820;
 }
 
-.fa-code {
-    color: coral;
+.fa-react {
+    color: #61dbfb;
 }
 
 .fa-html5 {
@@ -173,7 +182,6 @@ body {
     color: #3c873a;
 }
 
-/*Skills info*/
 .skills {
     margin-top: 2%;
     margin-bottom: 5%;
@@ -220,4 +228,9 @@ body {
 #submit:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.7);
     transition: 0.1s;
+}
+
+/*media queries*/
+@media only screen and (max-device-width: 768px) {
+    
 }
