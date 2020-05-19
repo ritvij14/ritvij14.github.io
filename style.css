@@ -231,7 +231,78 @@ body {
 }
 
 /*media queries*/
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 992px) {
+
+    body {
+        border: 0px;
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Righteous';
+        font-size: 16px;
+    }
+
+    #fixed {
+        background-image: url(/images/237038.jpg);
+        background-attachment: fixed;
+        height: 700px;
+        padding-top: 40px;
+        background-position: center;
+        background-size: auto;
+        margin-bottom: 0px;
+    }
+
+    .name {
+        font-size: 26px;
+        margin-left: 15%;
+        margin-right: -15%;
+        margin-top: -5%;
+    }
+
+    .info {
+        font-size: 18px;
+        margin-left: 15%;
+        margin-right: -15%;
+        margin-bottom: 10%;
+    }
+
+    .fixed-wrap .card {
+    width: 69vw;
+    height: 650px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-left: 0px;
+    padding-left: 0px;
+    margin-left: 15%;
+    border-radius: 1%;
+    }
+
+    .card .card-img-bg {
+        width: 69.5vw;
+        height: 65vw;
+        clip-path: polygon(0 0, 100% 0%, 100% 50%, 0% 100%);
+    }
+
+    .card .card-img {
+        object-fit: cover;
+        height: 40vw;
+        width: 35vw;
+        border: 0.5rem solid white;
+        margin-left: 20%;
+        margin-top: -80%;
+        border-radius: 30%;
+        z-index: 999;
+    }
+
+    #resume {
+        font-size: 22px;
+        margin-top: 50%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
 
     body {
         border: 0px;
