@@ -90,7 +90,7 @@ body {
 .fa-github,
 .fa-envelope-square {
     font-size: 3rem;
-    padding: 1rem;
+    padding: 0.5rem;
     color: deepskyblue;
 }
 
@@ -120,7 +120,7 @@ body {
 
 /*About me jumbotron*/
 .jumbotron {
-    padding: 1rem;
+    padding: 3rem;
     background-color: black;
     color: whitesmoke;
     border-radius: 0px;
@@ -137,6 +137,10 @@ body {
 }
 
 /*Skills*/
+#skills {
+    padding: 3rem;
+}
+
 .android,
 .web {
     padding-left: 10vw;
