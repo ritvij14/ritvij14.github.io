@@ -249,7 +249,7 @@ body {
     #fixed {
         background-image: url(/images/237038.jpg);
         background-attachment: fixed;
-        height: 700px;
+        height: 800px;
         padding-top: 40px;
         background-position: center;
         background-size: auto;
@@ -272,7 +272,7 @@ body {
 
     .fixed-wrap .card {
     width: 69vw;
-    height: 650px;
+    height: 725px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -301,9 +301,15 @@ body {
         z-index: 999;
     }
 
+    .social {
+        margin-top: -12%;
+        margin-left: 10%;
+        margin-right: -10%;
+        margin-bottom: 20%;
+    }
+
     #resume {
         font-size: 22px;
-        margin-top: 50%;
     }
 }
 
@@ -331,7 +337,7 @@ body {
 
     .fixed-wrap .card {
     width: 69vw;
-    height: 600px;
+    height: 725px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -345,7 +351,7 @@ body {
 
     .card .card-img-bg {
         width: 69vw;
-        height: 65vw;
+        height: 75vw;
         margin-left: -5%;
         clip-path: polygon(0 0, 100% 0%, 100% 50%, 0% 100%);
     }
