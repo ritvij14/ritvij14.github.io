@@ -4,6 +4,7 @@ body {
     padding: 0px;
     font-family: 'Righteous';
     font-size: 20px;
+    overflow-x: hidden;
 }
 
 /* all customizations for navbar*/
