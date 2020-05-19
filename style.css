@@ -303,9 +303,18 @@ body {
 
     .social {
         margin-top: -12%;
-        margin-left: 10%;
+        margin-left: 15%;
         margin-right: -10%;
         margin-bottom: 20%;
+    }
+
+    .fa-instagram,
+    .fa-linkedin,
+    .fa-github,
+    .fa-envelope-square {
+        font-size: 2.5rem;
+        padding: 0.3rem;
+        color: deepskyblue;
     }
 
     #resume {
