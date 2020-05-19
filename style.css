@@ -313,7 +313,7 @@ body {
     .fa-github,
     .fa-envelope-square {
         font-size: 2.5rem;
-        padding: 0.3rem;
+        padding-left: 0rem;
         color: deepskyblue;
     }
 
