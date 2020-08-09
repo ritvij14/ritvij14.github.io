@@ -1,0 +1,41 @@
+body {
+	background-color: #0e153a;
+	padding: 0;
+	border: 0;
+    margin: 0;
+}
+
+$secondary-color: #3D5AF1;
+$font-color: #E2F3F5;
+$content-font: 'Coda', cursive;
+$title-font: 'Orbitron', sans-serif;
+
+header {
+    padding-top: 1.5%;
+    padding-left: 7.5%;
+
+    nav {
+
+        #name-header {
+            background-color: $secondary-color;
+            color: $font-color;
+            padding: 10px;
+            width: fit-content;
+            font-family: $title-font;
+        }
+
+        a {
+            color: $font-color;
+            font-family: $content-font;
+            margin-right: 40px;
+
+            i {
+                margin-right: 7px;
+            }
+        }
+
+        .topnav-right {
+            float: right;
+        }
+    }
+}
