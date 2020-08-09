@@ -1,21 +1,20 @@
 body {
-	background-color: #0e153a;
-	padding: 0;
-	border: 0;
+    background-color: #0e153a;
+    padding: 0;
+    border: 0;
     margin: 0;
 }
 
-$secondary-color: #3D5AF1;
-$font-color: #E2F3F5;
-$content-font: 'Coda', cursive;
-$title-font: 'Orbitron', sans-serif;
-
+$secondary-color: #3d5af1;
+$font-color: #e2f3f5;
+$content-font: Open Sans,
+sans-serif;
+$title-font: "Orbitron",
+sans-serif;
 header {
     padding-top: 1.5%;
     padding-left: 7.5%;
-
     nav {
-
         #name-header {
             background-color: $secondary-color;
             color: $font-color;
@@ -23,19 +22,74 @@ header {
             width: fit-content;
             font-family: $title-font;
         }
-
         a {
             color: $font-color;
             font-family: $content-font;
             margin-right: 40px;
-
             i {
                 margin-right: 7px;
             }
         }
-
         .topnav-right {
             float: right;
+        }
+    }
+}
+
+.home-wrapper {
+    text-align: center;
+    #home {
+        font-family: $content-font;
+        color: $font-color;
+        font-size: 22px;
+        margin-top: 5%;
+        display: inline-flex;
+        width: fit-content;
+        //position: relative;
+        //left: 20%;
+        p {
+            width: fit-content;
+            height: auto;
+            position: relative;
+            right: 10%;
+            padding-top: 5%;
+            text-align: left;
+            img {
+                width: 10%;
+            }
+        }
+        .profile-image {
+            position: relative;
+            left: 10%;
+            #my-picture {
+                z-index: 0;
+                width: 80%;
+                height: auto;
+            }
+            #my-picture2 {
+                z-index: 2;
+                width: 72%;
+                position: absolute;
+                right: 20%;
+                visibility: hidden;
+                height: auto;
+            }
+            #triangle1 {
+                width: 120%;
+                height: auto;
+                z-index: -2;
+                position: absolute;
+                right: -20%;
+                margin-top: 20%;
+            }
+            #triangle2 {
+                width: 92%;
+                height: auto;
+                z-index: -2;
+                position: absolute;
+                right: 10%;
+                margin-top: 0%;
+            }
         }
     }
 }
