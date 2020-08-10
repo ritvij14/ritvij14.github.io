@@ -7,30 +7,29 @@ body {
 }
 
 $secondary-color: #3d5af1;
-$animation_name: animation-slide-in-left;
 $font-color: #e2f3f5;
 $content-font: Open Sans,
 sans-serif;
 $title-font: "Orbitron",
 sans-serif;
 
-/*@mixin keyframe ($animation_name) {
-    @-webkit-keyframes animation-slide-in-left {
+@mixin keyframe ($animation_name) {
+    @-webkit-keyframes #{$animation-name} {
         @content;
     }
 
-    @-moz-keyframes animation-slide-in-left {
+    @-moz-keyframes #{$animation-name} {
         @content;
     }
 
-    @-o-keyframes animation-slide-in-left {
+    @-o-keyframes #{$animation-name} {
         @content;
     }
 
-    @keyframes animation-slide-in-left {
+    @keyframes #{$animation-name} {
         @content;
     }
-}*/
+}
 
 @mixin animation ($delay, $duration, $animation, $direction: forward, $fillmode: fowards) {
     -webkit-animation-delay: $delay;
@@ -54,7 +53,43 @@ sans-serif;
 
 @include keyframe(animation-slide-in-left) {
     0% {
-        transform: translate(-100%,0);
+        transform: translate(-40%,0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0,0);
+        opacity: 1;
+    }
+}
+
+@include keyframe(animation-slide-in-right) {
+    0% {
+        transform: translate(40%,0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0,0);
+        opacity: 1;
+    }
+}
+
+@include keyframe(animation-slide-in-top) {
+    0% {
+        transform: translate(0,+40%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0,0);
+        opacity: 1;
+    }
+}
+
+@include keyframe(animation-slide-in-bottom) {
+    0% {
+        transform: translate(0,-40%);
         opacity: 0;
     }
 
@@ -108,7 +143,7 @@ header {
             right: 10%;
             padding-top: 15%;
             text-align: left;
-            @include animation (0, 0.5s, animation-slide-in-left, ease);
+            @include animation (0, 0.7s, animation-slide-in-left, ease);
 
             img {
                 width: 10%;
@@ -123,6 +158,7 @@ header {
                 z-index: 0;
                 width: 80%;
                 height: auto;
+                @include animation (0, 1s, animation-slide-in-bottom, ease);
                 opacity: 1;
                 transition: transform 0.3s;
                 &:hover {
@@ -144,6 +180,7 @@ header {
                 right: -20%;
                 margin-top: 20%;
                 transition: transform 0.3s;
+                @include animation (0, 0.7s, animation-slide-in-right, ease);
             }
             #triangle2 {
                 width: 92%;
@@ -153,6 +190,7 @@ header {
                 right: 10%;
                 margin-top: 0%;
                 transition: transform 0.3s;
+                @include animation (0, 0.4s, animation-slide-in-right, ease);
             }
         }
     }
@@ -194,6 +232,22 @@ header {
 
         .resume {
             margin-right: 15%;
+            @include animation (0, 1.2s, animation-slide-in-top, ease-in);
+        }
+
+        .linkedin {
+            margin-right: 15%;
+            @include animation (0, 1.2s, animation-slide-in-top, ease-in);
+        }
+
+        .github {
+            margin-right: 15%;
+            @include animation (0, 1.2s, animation-slide-in-top, ease-in);
+        }
+
+        .twitter {
+            margin-right: 15%;
+            @include animation (0, 1.2s, animation-slide-in-top, ease-in);
         }
 
         a {
