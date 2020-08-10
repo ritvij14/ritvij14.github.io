@@ -123,6 +123,21 @@ header nav #name-header {
   width: -moz-fit-content;
   width: fit-content;
   font-family: "Orbitron", sans-serif;
+  -webkit-animation-delay: 0;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-name: animation-slide-in-left;
+  -webkit-animation-fill-mode: fowards;
+  -webkit-animation-direction: ease;
+  -moz-animation-delay: 0;
+  -moz-animation-duration: 1s;
+  -moz-animation-name: animation-slide-in-left;
+  -moz-animation-fill-mode: fowards;
+  -moz-animation-direction: ease;
+  animation-delay: 0;
+  animation-duration: 1s;
+  animation-name: animation-slide-in-left;
+  animation-fill-mode: fowards;
+  animation-direction: ease;
 }
 
 header nav a {
@@ -136,8 +151,8 @@ header nav a i {
 }
 
 header nav .home-nav {
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
   -webkit-animation-delay: 0;
   -webkit-animation-duration: 1s;
   -webkit-animation-name: animation-slide-in-left;
@@ -156,8 +171,8 @@ header nav .home-nav {
 }
 
 header nav .about-nav {
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
   -webkit-animation-delay: 0.4s;
   -webkit-animation-duration: 1s;
   -webkit-animation-name: animation-slide-in-left;
@@ -176,8 +191,8 @@ header nav .about-nav {
 }
 
 header nav .exp-nav {
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
   -webkit-animation-delay: 0.8s;
   -webkit-animation-duration: 1s;
   -webkit-animation-name: animation-slide-in-left;
@@ -196,8 +211,8 @@ header nav .exp-nav {
 }
 
 header nav .contact-nav {
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
   -webkit-animation-delay: 1.2s;
   -webkit-animation-duration: 1s;
   -webkit-animation-name: animation-slide-in-left;
@@ -247,8 +262,8 @@ header nav .topnav-right {
   right: 10%;
   padding-top: 15%;
   text-align: left;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
   -webkit-animation-delay: 1.5s;
   -webkit-animation-duration: 1s;
   -webkit-animation-name: animation-slide-in-left;
@@ -283,8 +298,8 @@ header nav .topnav-right {
   z-index: 0;
   width: 80%;
   height: auto;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
   -webkit-animation-delay: 2.5s;
   -webkit-animation-duration: 1s;
   -webkit-animation-name: animation-slide-in-bottom;
@@ -300,7 +315,6 @@ header nav .topnav-right {
   animation-name: animation-slide-in-bottom;
   animation-fill-mode: fowards;
   animation-direction: ease;
-  opacity: 1;
   -webkit-transition: -webkit-transform 0.3s;
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
@@ -333,8 +347,8 @@ header nav .topnav-right {
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
   -webkit-animation-delay: 2s;
   -webkit-animation-duration: 1s;
   -webkit-animation-name: animation-slide-in-right;
@@ -363,19 +377,19 @@ header nav .topnav-right {
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  -webkit-animation-delay: 2s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  -webkit-animation-delay: 2.3s;
   -webkit-animation-duration: 1s;
   -webkit-animation-name: animation-slide-in-right;
   -webkit-animation-fill-mode: fowards;
   -webkit-animation-direction: ease;
-  -moz-animation-delay: 2s;
+  -moz-animation-delay: 2.3s;
   -moz-animation-duration: 1s;
   -moz-animation-name: animation-slide-in-right;
   -moz-animation-fill-mode: fowards;
   -moz-animation-direction: ease;
-  animation-delay: 2s;
+  animation-delay: 2.3s;
   animation-duration: 1s;
   animation-name: animation-slide-in-right;
   animation-fill-mode: fowards;
@@ -441,8 +455,8 @@ header nav .topnav-right {
 
 .side-info-bar ul .resume {
   margin-right: 15%;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
   -webkit-animation-delay: 3s;
   -webkit-animation-duration: 1s;
   -webkit-animation-name: animation-slide-in-top;
@@ -462,8 +476,8 @@ header nav .topnav-right {
 
 .side-info-bar ul .linkedin {
   margin-right: 15%;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
   -webkit-animation-delay: 3s;
   -webkit-animation-duration: 1s;
   -webkit-animation-name: animation-slide-in-top;
@@ -483,8 +497,8 @@ header nav .topnav-right {
 
 .side-info-bar ul .github {
   margin-right: 15%;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
   -webkit-animation-delay: 3s;
   -webkit-animation-duration: 1s;
   -webkit-animation-name: animation-slide-in-top;
@@ -504,8 +518,8 @@ header nav .topnav-right {
 
 .side-info-bar ul .twitter {
   margin-right: 15%;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
   -webkit-animation-delay: 3s;
   -webkit-animation-duration: 1s;
   -webkit-animation-name: animation-slide-in-top;

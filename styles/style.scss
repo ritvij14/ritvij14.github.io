@@ -12,20 +12,16 @@ $content-font: Open Sans,
 sans-serif;
 $title-font: "Orbitron",
 sans-serif;
-
 @mixin keyframe ($animation_name) {
     @-webkit-keyframes #{$animation-name} {
         @content;
     }
-
     @-moz-keyframes #{$animation-name} {
         @content;
     }
-
     @-o-keyframes #{$animation-name} {
         @content;
     }
-
     @keyframes #{$animation-name} {
         @content;
     }
@@ -37,13 +33,11 @@ sans-serif;
     -webkit-animation-name: $animation;
     -webkit-animation-fill-mode: $fillmode;
     -webkit-animation-direction: $direction;
-
     -moz-animation-delay: $delay;
     -moz-animation-duration: $duration;
     -moz-animation-name: $animation;
     -moz-animation-fill-mode: $fillmode;
     -moz-animation-direction: $direction;
-
     animation-delay: $delay;
     animation-duration: $duration;
     animation-name: $animation;
@@ -53,48 +47,44 @@ sans-serif;
 
 @include keyframe(animation-slide-in-left) {
     0% {
-        transform: translate(-40%,0);
+        transform: translate(-40%, 0);
         opacity: 0;
     }
-
     100% {
-        transform: translate(0,0);
+        transform: translate(0, 0);
         opacity: 1;
     }
 }
 
 @include keyframe(animation-slide-in-right) {
     0% {
-        transform: translate(40%,0);
+        transform: translate(40%, 0);
         opacity: 0;
     }
-
     100% {
-        transform: translate(0,0);
+        transform: translate(0, 0);
         opacity: 1;
     }
 }
 
 @include keyframe(animation-slide-in-top) {
     0% {
-        transform: translate(0,+40%);
+        transform: translate(0, +40%);
         opacity: 0;
     }
-
     100% {
-        transform: translate(0,0);
+        transform: translate(0, 0);
         opacity: 1;
     }
 }
 
 @include keyframe(animation-slide-in-bottom) {
     0% {
-        transform: translate(0,-40%);
+        transform: translate(0, -40%);
         opacity: 0;
     }
-
     100% {
-        transform: translate(0,0);
+        transform: translate(0, 0);
         opacity: 1;
     }
 }
@@ -109,37 +99,32 @@ header {
             padding: 10px;
             width: fit-content;
             font-family: $title-font;
+            @include animation (0, 1s, animation-slide-in-left, ease);
         }
         a {
             color: $font-color;
             font-family: $content-font;
-            
             margin-right: 40px;
             i {
                 margin-right: 7px;
             }
         }
-
         .home-nav {
-            animation-fill-mode: both;
+            animation-fill-mode: backwards;
             @include animation (0, 1s, animation-slide-in-left, ease);
         }
-
         .about-nav {
-            animation-fill-mode: both;
+            animation-fill-mode: backwards;
             @include animation (0.4s, 1s, animation-slide-in-left, ease);
         }
-
         .exp-nav {
-            animation-fill-mode: both;
+            animation-fill-mode: backwards;
             @include animation (0.8s, 1s, animation-slide-in-left, ease);
         }
-
         .contact-nav {
-            animation-fill-mode: both;
+            animation-fill-mode: backwards;
             @include animation (1.2s, 1s, animation-slide-in-left, ease);
         }
-
         .topnav-right {
             float: right;
         }
@@ -156,7 +141,6 @@ header {
         margin-top: 4%;
         display: inline-flex;
         width: fit-content;
-
         p {
             line-height: 50px;
             width: fit-content;
@@ -165,9 +149,8 @@ header {
             right: 10%;
             padding-top: 15%;
             text-align: left;
-            animation-fill-mode: both;
+            animation-fill-mode: backwards;
             @include animation (1.5s, 1s, animation-slide-in-left, ease);
-
             img {
                 width: 10%;
             }
@@ -181,21 +164,20 @@ header {
                 z-index: 0;
                 width: 80%;
                 height: auto;
-                animation-fill-mode: both;
+                animation-fill-mode: backwards;
                 @include animation (2.5s, 1s, animation-slide-in-bottom, ease);
-                opacity: 1;
+                //opacity: 1;
                 transition: transform 0.3s;
                 &:hover {
                     transform: scale(1.1);
-                } 
-                &:hover + #triangle1 {
+                }
+                &:hover+#triangle1 {
                     transform: rotate(-45deg);
                 }
-                &:hover ~ #triangle2 {
+                &:hover~#triangle2 {
                     transform: rotate(45deg);
                 }
             }
-
             #triangle1 {
                 width: 120%;
                 height: auto;
@@ -204,7 +186,7 @@ header {
                 right: -20%;
                 margin-top: 20%;
                 transition: transform 0.3s;
-                animation-fill-mode: both;
+                animation-fill-mode: backwards;
                 @include animation (2s, 1s, animation-slide-in-right, ease);
             }
             #triangle2 {
@@ -215,8 +197,8 @@ header {
                 right: 10%;
                 margin-top: 0%;
                 transition: transform 0.3s;
-                animation-fill-mode: both;
-                @include animation (2s, 1s, animation-slide-in-right, ease);
+                animation-fill-mode: backwards;
+                @include animation (2.3s, 1s, animation-slide-in-right, ease);
             }
         }
     }
@@ -232,17 +214,14 @@ header {
     align-items: center;
     width: fit-content;
     height: auto;
-
     ul {
         list-style: none;
-
         .item {
             display: flex;
             flex-direction: row-reverse;
             justify-content: center;
             align-items: center;
         }
-
         span {
             opacity: 0;
             color: #0e153a;
@@ -255,35 +234,30 @@ header {
             z-index: 1;
             transition: opacity 0.5s;
         }
-
         .resume {
             margin-right: 15%;
-            animation-fill-mode: both;
+            animation-fill-mode: backwards;
             @include animation (3s, 1s, animation-slide-in-top, ease-in);
         }
-
         .linkedin {
             margin-right: 15%;
-            animation-fill-mode: both;
+            animation-fill-mode: backwards;
             @include animation (3s, 1s, animation-slide-in-top, ease-in);
         }
-
         .github {
             margin-right: 15%;
-            animation-fill-mode: both;
+            animation-fill-mode: backwards;
             @include animation (3s, 1s, animation-slide-in-top, ease-in);
         }
-
         .twitter {
             margin-right: 15%;
-            animation-fill-mode: both;
+            animation-fill-mode: backwards;
             @include animation (3s, 1s, animation-slide-in-top, ease-in);
         }
-
         a {
             color: $font-color;
             font-size: 35px;
-            &:hover + span {
+            &:hover+span {
                 opacity: 1;
             }
         }
