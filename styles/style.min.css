@@ -111,8 +111,12 @@ body {
 }
 
 header {
+  margin-left: 2%;
+  margin-right: 2%;
   padding-top: 1.5%;
-  padding-left: 7.5%;
+  padding-left: 5.5%;
+  -webkit-box-shadow: 0 8px 6px -6px #000;
+  box-shadow: 0 8px 6px -6px #000;
 }
 
 header nav #name-header {
@@ -143,14 +147,28 @@ header nav #name-header {
 header nav a {
   color: #e2f3f5;
   font-family: Open Sans, sans-serif;
-  margin-right: 40px;
+  text-decoration: none;
+  margin-right: 20px;
+  padding: 15px;
+}
+
+header nav a:hover {
+  background-color: #3d5af1;
+  text-decoration: none;
+  color: #e2f3f5;
 }
 
 header nav a i {
   margin-right: 7px;
 }
 
-header nav .home-nav {
+header nav .active {
+  background-color: #3d5af1;
+  text-decoration: none;
+  color: #e2f3f5;
+}
+
+header nav #home-nav {
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
   -webkit-animation-delay: 0;
@@ -170,7 +188,7 @@ header nav .home-nav {
   animation-direction: ease;
 }
 
-header nav .about-nav {
+header nav #about-nav {
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
   -webkit-animation-delay: 0.4s;
@@ -190,7 +208,7 @@ header nav .about-nav {
   animation-direction: ease;
 }
 
-header nav .exp-nav {
+header nav #exp-nav {
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
   -webkit-animation-delay: 0.8s;
@@ -210,7 +228,7 @@ header nav .exp-nav {
   animation-direction: ease;
 }
 
-header nav .contact-nav {
+header nav #contact-nav {
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
   -webkit-animation-delay: 1.2s;
