@@ -140,79 +140,79 @@ header nav .home-nav {
           animation-fill-mode: both;
   -webkit-animation-delay: 0;
   -webkit-animation-duration: 1s;
-  -webkit-animation-name: animation-slide-in-top;
+  -webkit-animation-name: animation-slide-in-left;
   -webkit-animation-fill-mode: fowards;
-  -webkit-animation-direction: ease-in;
+  -webkit-animation-direction: ease;
   -moz-animation-delay: 0;
   -moz-animation-duration: 1s;
-  -moz-animation-name: animation-slide-in-top;
+  -moz-animation-name: animation-slide-in-left;
   -moz-animation-fill-mode: fowards;
-  -moz-animation-direction: ease-in;
+  -moz-animation-direction: ease;
   animation-delay: 0;
   animation-duration: 1s;
-  animation-name: animation-slide-in-top;
+  animation-name: animation-slide-in-left;
   animation-fill-mode: fowards;
-  animation-direction: ease-in;
+  animation-direction: ease;
 }
 
 header nav .about-nav {
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
-  -webkit-animation-delay: 0;
+  -webkit-animation-delay: 0.4s;
   -webkit-animation-duration: 1s;
-  -webkit-animation-name: animation-slide-in-top;
+  -webkit-animation-name: animation-slide-in-left;
   -webkit-animation-fill-mode: fowards;
-  -webkit-animation-direction: ease-in;
-  -moz-animation-delay: 0;
+  -webkit-animation-direction: ease;
+  -moz-animation-delay: 0.4s;
   -moz-animation-duration: 1s;
-  -moz-animation-name: animation-slide-in-top;
+  -moz-animation-name: animation-slide-in-left;
   -moz-animation-fill-mode: fowards;
-  -moz-animation-direction: ease-in;
-  animation-delay: 0;
+  -moz-animation-direction: ease;
+  animation-delay: 0.4s;
   animation-duration: 1s;
-  animation-name: animation-slide-in-top;
+  animation-name: animation-slide-in-left;
   animation-fill-mode: fowards;
-  animation-direction: ease-in;
+  animation-direction: ease;
 }
 
 header nav .exp-nav {
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
-  -webkit-animation-delay: 0;
+  -webkit-animation-delay: 0.8s;
   -webkit-animation-duration: 1s;
-  -webkit-animation-name: animation-slide-in-top;
+  -webkit-animation-name: animation-slide-in-left;
   -webkit-animation-fill-mode: fowards;
-  -webkit-animation-direction: ease-in;
-  -moz-animation-delay: 0;
+  -webkit-animation-direction: ease;
+  -moz-animation-delay: 0.8s;
   -moz-animation-duration: 1s;
-  -moz-animation-name: animation-slide-in-top;
+  -moz-animation-name: animation-slide-in-left;
   -moz-animation-fill-mode: fowards;
-  -moz-animation-direction: ease-in;
-  animation-delay: 0;
+  -moz-animation-direction: ease;
+  animation-delay: 0.8s;
   animation-duration: 1s;
-  animation-name: animation-slide-in-top;
+  animation-name: animation-slide-in-left;
   animation-fill-mode: fowards;
-  animation-direction: ease-in;
+  animation-direction: ease;
 }
 
 header nav .contact-nav {
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
-  -webkit-animation-delay: 0;
+  -webkit-animation-delay: 1.2s;
   -webkit-animation-duration: 1s;
-  -webkit-animation-name: animation-slide-in-top;
+  -webkit-animation-name: animation-slide-in-left;
   -webkit-animation-fill-mode: fowards;
-  -webkit-animation-direction: ease-in;
-  -moz-animation-delay: 0;
+  -webkit-animation-direction: ease;
+  -moz-animation-delay: 1.2s;
   -moz-animation-duration: 1s;
-  -moz-animation-name: animation-slide-in-top;
+  -moz-animation-name: animation-slide-in-left;
   -moz-animation-fill-mode: fowards;
-  -moz-animation-direction: ease-in;
-  animation-delay: 0;
+  -moz-animation-direction: ease;
+  animation-delay: 1.2s;
   animation-duration: 1s;
-  animation-name: animation-slide-in-top;
+  animation-name: animation-slide-in-left;
   animation-fill-mode: fowards;
-  animation-direction: ease-in;
+  animation-direction: ease;
 }
 
 header nav .topnav-right {
