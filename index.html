@@ -24,24 +24,32 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-inverse navbar-fixed-top">
+        <nav class="navbar navbar-expand-md navbar-inverse navbar-fixed-top">
             <div class="container-fluid">
+
                 <div class="navbar-header">
                     <h3 id="name-header">RITVIJ</h3>
                 </div>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="topnav-right" id="navbar-responsive">
-                    <a id="home-nav" class="active" href="#home"><i class="fas fa-house-user"></i>Home</a>
-                    <a id="about-nav" href="#about"><i class="fas fa-user-tie"></i>About</a>
-                    <a id="exp-nav" class="" href="#experience"><i class="fas fa-project-diagram"></i>Experience</a>
-                    <a id="contact-nav" class="" href="#contact"><i class="fas fa-handshake"></i>Contact</a>
-                    <!--<a href="javascript:void(0);" class="icon" onclick="navFunction()">
-                        <i class="fa fa-bars"></i>
-                    </a>-->
-                    <!--js void(0) returns undefined; since normal a javascript: URL will return browser too
-                    a plain text version of the result of evaluating that javascript, returning undefined keeps it on same page-->
+
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a id="home-nav" class="nav-link active" href="#home"><i class="fas fa-house-user"></i>Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="about-nav" class="nav-link" href="#about"><i class="fas fa-user-tie"></i>About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="exp-nav" class="nav-link" href="#experience"><i class="fas fa-project-diagram"></i>Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="contact-nav" class="nav-link" href="#contact"><i class="fas fa-handshake"></i>Contact</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
