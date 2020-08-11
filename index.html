@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <!--Fonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Orbitron&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Open+Sans&family=Orbitron&display=swap" rel="stylesheet">
 
     <!--Font awesome-->
     <script src="https://kit.fontawesome.com/38a22d5f15.js" crossorigin="anonymous"></script>
@@ -40,9 +40,6 @@
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a id="home-nav" class="nav-link active" href="#home"><i class="fas fa-house-user"></i>Home</a>
-                        </li>
-                        <li class="nav-item">
                             <a id="about-nav" class="nav-link" href="#about"><i class="fas fa-user-tie"></i>About</a>
                         </li>
                         <li class="nav-item">
@@ -60,16 +57,15 @@
 
     <div class="home-wrapper container-fluid">
         <div id="home">
-            <p>
-                Hi, I am Ritvij. <img alt="wave" class="emoji" src="https://emojis.slackmojis.com/emojis/images/1588177020/8809/wave_hello.gif?1588177020" />
-                <br />
-                <br /> 👨‍💻Tech geek + Android Dev. + Fullstack <br /> Web dev. + Content writer + Open <br /> source enthusiast + Quick learner <img alt="glasses-face" class="emoji" src="https://emojis.slackmojis.com/emojis/images/1531849430/4246/blob-sunglasses.gif?1531849430"
-                />
-            </p>
-            <div class="profile-image">
-                <img id="my-picture" src="./images/IMG_20200517_074303.png" alt="My Photo">
-                <img id="triangle1" src="./images/Polygon 2.png" alt="triangle1">
-                <img id="triangle2" src="./images/Polygon 3.png" alt="triangle2">
+            <div>
+                <p class="greeting">
+                    Hello! My name is
+                </p>
+                <h2 class="name">Ritvij Kumar Sharma</h2>
+                <h2 class="punchline">I build digital stuff to solve problems.</h2>
+                <p class="qualities">
+                    👨‍💻Tech geek + Android Dev. + Fullstack <br /> Web dev. + Content writer + Open <br /> source enthusiast + Quick learner <img alt="glasses-face" class="emoji" src="https://emojis.slackmojis.com/emojis/images/1531849430/4246/blob-sunglasses.gif?1531849430"/>
+                </p>
             </div>
         </div>
     </div>
@@ -110,13 +106,47 @@
     </div>
 
     <div id="about" class="about-wrapper">
-        <h3>About me</h3>
-        <p>2nd year student in BITS Pilani, Goa campus pursuing B.E. in
-            <br/> Electronics and Instrumentation.
-            <br/>
-            <br/> I am a 19 year old Android and Full-stack Web dev. I like to code, and use it to create designs, set up servers and solve problems. I am also a Content Writer. I have written a few blogs and also many publicity content for my college
-            club.
-        </p>
+        <div class="about-main">
+            <div class="about-title">
+                <h3>About me</h3>
+                <img src="./images/Group 24.png" alt="title-border" />
+            </div>
+            <div class="about-content">
+                <img src="./images/Group 15.png" alt="">
+                <div>
+                    <p>
+                        I am a 2nd year student in BITS Pilani, Goa campus., pursuing B.E.
+                        degree in Electronics and Instrumentation.<br/>
+                        <br/>
+                        I am an Android and Fullstack Web Developer, and a Technical Content Writer. I am also an Open source enthusiast and have contributed to various projects.<br/>
+                        <br/>
+                        Technologies/languages I work with right now:
+                    </p>
+                    <div class="about-skills">
+                        <ul class="skill-list">
+                            <li class="skill">Android Studio</li>
+                            <li class="skill">Javascript</li>
+                            <li class="skill">Docker</li>
+                        </ul>
+                        <ul class="skill-list">
+                            <li class="skill">Java</li>
+                            <li class="skill">Typescript</li>
+                            <li class="skill">Node.js</li></ul>
+                        <ul class="skill-list">
+                            <li class="skill">Kotlin</li>
+                            <li class="skill">React</li>
+                            <li class="skill">HTML+(S)CSS</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="profile-image">
+            <img id="my-picture" src="./images/IMG_20200517_074303.png" alt="My Photo">
+            <img id="triangle1" src="./images/Polygon 2.png" alt="triangle1">
+            <img id="triangle2" src="./images/Polygon 3.png" alt="triangle2">
+        </div>
     </div>
 
     <script src="./scripts/app.js"></script>
