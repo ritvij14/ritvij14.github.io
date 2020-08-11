@@ -16,3 +16,9 @@ function navClick(btn) {
         btn.classList.add("active");
     }
 }
+
+function navFunction() {
+    var nav = document.getElementsByClassName("navbar");
+    nav[0].classList.add("responsive");
+    nav[0].classList.add("topnav");
+}
